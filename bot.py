@@ -1,9 +1,9 @@
 from telegram.ext import Updater
 from telegram.ext import CommandHandler
+import config
 
-TELEGRAM_TOKEN = "130757743:AAGbbBfXDNGnmpYqvbfC4-mXlDcD1V4i2tQ"
+updater = Updater(token=config.telegram['token'])
 
-updater = Updater(token=TELEGRAM_TOKEN)
 dispatcher = updater.dispatcher
 
 def echo(bot, update):
