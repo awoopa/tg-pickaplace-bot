@@ -1,7 +1,7 @@
 from telegram import Updater
 import config
 
-updater = Updater(token=config.telegram.token)
+updater = Updater(token=config.telegram['token'])
 dispatcher = updater.dispatcher
 
 
