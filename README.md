@@ -1,2 +1,2 @@
-# tg-pickaplace-bot
+# tg-pickaplacebot
 pickaplacebot
