@@ -1,9 +1,9 @@
 from telegram import Updater
+import config
 
-TELEGRAM_TOKEN = "INSERT_YOUR_TOKEN_HERE"
-
-updater = Updater(token=TELEGRAM_TOKEN)
+updater = Updater(token=config.telegram.token)
 dispatcher = updater.dispatcher
+
 
 def echo(bot, update):
   message_text = update.message.text
